@@ -1,0 +1,41 @@
+// header logo
+.header-logo {
+    display: block;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $main-text-color;
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+  
+  .web-part {
+    color: $accent-color;
+  }
+
+//   footer logo
+.footer-logo {
+    display: inline-block;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $main-page-color;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+  }

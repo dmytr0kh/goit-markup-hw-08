@@ -1,0 +1,25 @@
+@import "utils/variables";
+@import "utils/global";
+@import "utils/reset";
+
+body {
+  background-color: $main-page-color;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  letter-spacing: $main-letter-spacing;
+  color: $main-text-color;
+}
+
+// components
+@import "components/header";
+@import 'components/logo';
+@import "components/hero";
+@import "components/benefits";
+@import "components/operation";
+@import "components/team";
+@import "components/clients";
+@import 'components/project-buttons';
+@import "components/projects";
+@import "components/footer";
+@import "components/backdrop";
+@import 'components/modal';

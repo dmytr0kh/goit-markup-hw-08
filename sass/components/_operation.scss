@@ -1,0 +1,54 @@
+.operation {
+  padding-top: 0;
+}
+
+.operation-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: $main-text-color;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.operation-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.operation-img {
+  width: 370px;
+}
+
+.operation-item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.operation-box {
+  position: relative;
+  width: 370px;
+  height: 294px;
+}
+
+.operation-overlay {
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+}
+
+.overlay-title {
+  font-weight: 700;
+  line-height: 1.14;
+  color: $main-page-color;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
