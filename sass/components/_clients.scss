@@ -1,23 +1,55 @@
+.clients-section {
+  padding-top: 0;
+}
+
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1, 17;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   color: $main-text-color;
-  margin-bottom: 50px;
+  padding-top: 60px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    padding-top: 94px;
+  }
 }
 
 .clients__list {
   cursor: pointer;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding-left: 0;
+
+  @media screen and (min-width: $tablet) {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
-.client__link {
-  width: 170px;
+.clients__link {
+  width: 210px;
   height: 92px;
   display: flex;
   border: 1px solid $clients-fill-color;
@@ -31,5 +63,13 @@
   &:focus {
     border-color: $accent-color;
     fill: $accent-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
   }
 }

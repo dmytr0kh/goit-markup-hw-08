@@ -1,20 +1,36 @@
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .container {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  
+  @media screen and (min-width: $tablet) {
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0; 
+  }
+    
+  @media screen and (min-width: $desktop) { 
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  }
 }
 
 .visually-hidden {

@@ -1,8 +1,17 @@
 .operation {
+  display: none;
   padding-top: 0;
+
+  @media screen and (min-width: $tablet) {
+display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+  display: contents;
+  }
 }
 
-.operation-title {
+.operation__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -11,16 +20,16 @@
   margin-bottom: 50px;
 }
 
-.operation-list {
+.operation__list {
   display: flex;
   padding-left: 0;
 }
 
-.operation-img {
+.operation__img {
   width: 370px;
 }
 
-.operation-item {
+.operation__item {
   margin-right: 30px;
 
   &:last-child {
@@ -28,13 +37,13 @@
   }
 }
 
-.operation-box {
+.operation__box {
   position: relative;
   width: 370px;
   height: 294px;
 }
 
-.operation-overlay {
+.operation__overlay {
   bottom: 0;
   position: absolute;
   display: flex;
@@ -45,9 +54,10 @@
   height: 70px;
 }
 
-.overlay-title {
+.overlay__title {
   font-weight: 700;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   color: $main-page-color;
   text-transform: uppercase;
   white-space: nowrap;

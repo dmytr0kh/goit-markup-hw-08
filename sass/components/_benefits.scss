@@ -1,9 +1,36 @@
-.benefits-list {
-  display: flex;
-  padding-left: 0;
+.benefits__list {
+  display: block;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.benefits-item {
+  @media screen and (min-width: $desktop) {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 0;
+}
+}
+
+.benefits__item {
+  max-width: 450px;
+  margin-bottom: 30px;
+ 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 354px;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
   margin-right: 30px;
   max-width: 270px;
 
@@ -11,33 +38,56 @@
     margin-right: 0;
   }
 }
-
-.benefit-div {
-  display: flex;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-color: $third-page-color;
-  justify-content: center;
-  align-items: center;
 }
 
-.benefit-icon {
+.benefits__div {
+  display: flex;
+    width: 450px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $third-page-color;
+    justify-content: center;
+    align-items: center; 
+  
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: $desktop) {
+  width: 270px;
+  height: 120px;
+}
+}
+
+.benefits__icon {
   display: flex;
   fill: $main-text-color;
 }
 
-.benefits-caption {
+.benefits__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: $main-text-color;
   margin-bottom: 10px;
+
+  display: block;
+  text-align: center;
+  
+  @media screen and (min-width: $tablet) {
+    text-align: unset;
+
+  }
+  
+  @media screen and (min-width: $desktop) {
+    text-align: unset;
+  }
 }
 
-.benefits-text {
+.benefits__text {
   line-height: 1.71;
   color: $secondary-text-color;
 }
