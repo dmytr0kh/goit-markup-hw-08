@@ -10,18 +10,18 @@ body {
   color: $main-text-color;
 }
 
-@import 'components/social-icons';
+@import "components/social-icons";
 
 // components
-@import 'components/logo';
-@import 'components/page-header';
-@import 'components/hero';
-@import 'components/benefits';
-@import 'components/operation';
-@import 'components/team';
-@import 'components/clients';
-@import 'components/footer';
-@import 'components/backdrop';
-@import 'components/modal';
+@import "components/logo";
+@import "components/page-header";
+@import "components/hero";
+@import "components/benefits";
+@import "components/operation";
+@import "components/team";
+@import "components/clients";
+@import "components/footer";
+@import "components/backdrop";
+@import "components/modal";
 
-// @import 'components/mobile-menu';
+// @import "components/mobile-menu";

@@ -5,11 +5,6 @@
 }
 
 .footer-container {
-
-  display: block;
-  align-items: center;
-  justify-content: center;
-
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -23,8 +18,37 @@
   }
 }
 
+.address__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+
 .address__list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: inline-block;
+    white-space: nowrap;
+  }
 }
 
 .address__item {
@@ -48,7 +72,11 @@
 }
 
 // footer social
+
 .social {
+  display: block;
+  margin-bottom: 60px;
+
   @media screen and (min-width: $desktop) {
     margin-left: 70px;
   }
@@ -59,26 +87,22 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: left;
+  text-align: center;
   color: $main-page-color;
-}
 
-.social__list {
-  display: flex;
-  padding-left: 0;
-  margin-top: 20px;
-}
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
 
-.social__item {
-  margin-right: 10px;
-
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width: $desktop) {
+    text-align: left;
   }
 }
 
 /* form footer  */
 .footer-form {
+  display: block;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +113,7 @@
 
   @media screen and (min-width: $desktop) {
     display: block;
-    margin-left: auto;
+    margin-left: 93px;
   }
 }
 
@@ -98,12 +122,26 @@
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: center;
   color: $main-page-color;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .footer-form__signup {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -122,39 +160,22 @@
 }
 
 .footer-form__label {
-  @media screen and (min-width: $tablet) {
-    display: block;
-    width: 450px;
-    height: 50px;
-    margin-bottom: 20px;
-    background-color: $hero-overlay-color;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: block;
+  width: 450px;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: $hero-overlay-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-    font-size: 16px;
-    line-height: 1.25;
-    text-align: left;
-    padding-left: 16px;
-    color: $secondary-text-color;
-  }
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+  padding-left: 16px;
+  color: $secondary-text-color;
 
-  @media screen and (min-width: $desktop) {
-    display: block;
-    width: 358px;
-    height: 50px;
-    margin-right: 12px;
-    background-color: $hero-overlay-color;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
-    font-size: 16px;
-    line-height: 1.25;
-    text-align: left;
-    padding-left: 16px;
-    color: $secondary-text-color;
-  }
+  margin-right: 12px;
 }
 
 .footer-form__btn {

@@ -5,6 +5,9 @@
 }
 
 .form-modal {
+  width: 100%;
+  height: 609px;
+
   @media screen and (min-width: $tablet) {
     width: 100%;
     height: 609px;
@@ -45,6 +48,9 @@
 }
 
 .form-label {
+  width: 370px;
+  height: 58px;
+
   @media screen and (min-width: $tablet) {
     width: 370px;
     height: 58px;
@@ -112,18 +118,38 @@
 
 .checkbox-icon {
   position: absolute;
-  left: 12px;
-  top: 4px;
+  left: 0px;
+  top: 3px;
   border: 1.7px solid $main-text-color;
   fill: $main-page-color;
   border-radius: 4px;
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    left: 12px;
+    top: 4px;
+    border: 1.7px solid $main-text-color;
+    fill: $main-page-color;
+    border-radius: 4px;
+  }
 }
 
 .checkbox-text {
-  margin-left: 37px;
+  display: block;
+  align-items: baseline;
+  margin-left: 28px;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 37px;
+  }
 }
 
 .text-contract {
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+
   @media screen and (min-width: $tablet) {
     font-size: 12px;
     line-height: 1.71;
@@ -139,6 +165,11 @@
 }
 
 .contract-link {
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+
   @media screen and (min-width: $tablet) {
     font-size: 12px;
     line-height: 1.71;
@@ -155,7 +186,10 @@
 }
 
 .form-buttom {
+  display: block;
   position: absolute;
+  bottom: 40px;
+  left: 125px;
   width: 200px;
   height: 50px;
   padding: 10px 52px;
