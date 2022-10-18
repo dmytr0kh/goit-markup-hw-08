@@ -13,8 +13,9 @@ body {
 @import "components/social-icons";
 
 // components
-@import "components/logo";
 @import "components/page-header";
+@import "components/logo";
+@import "components/mobile-menu";
 @import "components/hero";
 @import "components/benefits";
 @import "components/operation";
@@ -23,5 +24,3 @@ body {
 @import "components/footer";
 @import "components/backdrop";
 @import "components/modal";
-
-// @import "components/mobile-menu";
