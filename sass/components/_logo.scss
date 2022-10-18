@@ -14,9 +14,16 @@
     background-color: transparent;
   }
 
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 87px;
+  }
+
   @media screen and (min-width: $desktop) {
     font-size: 26px;
     line-height: 1.19;
+    margin-right: 91px;
   }
 }
 
