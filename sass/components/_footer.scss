@@ -9,6 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: baseline;
   }
 
   @media screen and (min-width: $desktop) {
@@ -25,6 +26,9 @@
 
   @media screen and (min-width: $tablet) {
     display: block;
+    text-align: center;
+    
+  margin-bottom: 60px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -33,12 +37,14 @@
 }
 
 .address__list {
+  @media screen and (max-width: 767px) {
   display: flex;
   flex-direction: column;
   align-items: center;
   white-space: nowrap;
 
   margin-bottom: 60px;
+  }
 
   @media screen and (min-width: $tablet) {
     display: inline-block;
@@ -74,10 +80,13 @@
 // footer social
 
 .social {
+  @media screen and (max-width: 767px) {
   display: block;
   margin-bottom: 60px;
+  }
 
   @media screen and (min-width: $desktop) {
+    display: block;
     margin-left: 70px;
   }
 }

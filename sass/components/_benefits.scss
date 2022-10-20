@@ -35,12 +35,8 @@
   }
 
   @media screen and (min-width: $desktop) {
-  margin-right: 30px;
   max-width: 270px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  margin-bottom: 0;
 }
 }
 
