@@ -28,8 +28,8 @@
 
   padding: 40px;
 
-    @media screen and (max-width:$mobile - 1px ) {
-  max-width: 320px;
+    @media screen and (max-width:479px) {
+  width: 100%;
       }
   @media screen and (min-width:$mobile) {
     width: 450px;
