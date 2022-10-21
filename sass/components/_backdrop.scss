@@ -19,7 +19,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
   height: 609px;
   background-color: $main-page-color;
   border-radius: 4px;
@@ -28,6 +27,13 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   padding: 40px;
+
+    @media screen and (max-width:$mobile - 1px ) {
+  max-width: 320px;
+      }
+  @media screen and (min-width:$mobile) {
+    width: 450px;
+  }
 
   @media screen and (min-width: $tablet) {
     width: 450px;
