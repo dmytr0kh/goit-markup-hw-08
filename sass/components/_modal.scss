@@ -39,12 +39,14 @@
 .form-group {
   position: relative;
 
-  & input:checked + label .checkbox-icon {
+  & input:checked+label .checkbox-icon {
     border: 1.7px solid $accent-color;
     background-color: $accent-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+.checkbox-form {}
 
 .form-label {
   width: 370px;
@@ -58,6 +60,10 @@
   @media screen and (min-width: $desktop) {
     width: 448px;
     height: 58px;
+  }
+
+  @media screen and (max-width: 479px) {
+    max-width: 100%;
   }
 }
 
@@ -84,7 +90,7 @@
     outline: 1px solid $accent-color;
   }
 
-  &:focus ~ .icon {
+  &:focus~.icon {
     fill: $accent-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -216,5 +222,9 @@
   @media screen and (min-width: $desktop) {
     bottom: 40px;
     left: 164px;
+  }
+
+  @media screen and (max-width: 479px) {
+    left: 25%;
   }
 }

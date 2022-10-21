@@ -610,6 +610,12 @@ body {
   display: flex;
   margin-top: 64px;
 }
+@media screen and (max-width: 479px) {
+  .mobile-social__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .mobile-social__item {
   padding-right: 10px;
@@ -1807,7 +1813,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    width: 90%;
+    max-width: 90%;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1900,6 +1906,11 @@ body {
   .form-label {
     width: 448px;
     height: 58px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .form-label {
+    max-width: 100%;
   }
 }
 
@@ -2070,5 +2081,10 @@ body {
   .form-buttom {
     bottom: 40px;
     left: 164px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .form-buttom {
+    left: 25%;
   }
 }/*# sourceMappingURL=main.css.map */

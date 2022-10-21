@@ -55,6 +55,8 @@
   @media (min-width: 768px) {
     display: none;
   }
+
+
 }
 
 .mobile-navigation__list {
@@ -116,6 +118,10 @@
 .mobile-social__list {
   display: flex;
   margin-top: 64px;
+
+    @media screen and (max-width:479px) {
+      flex-wrap: wrap;
+    }
 }
 
 .mobile-social__item {
