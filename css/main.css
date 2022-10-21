@@ -1046,7 +1046,6 @@ body {
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    width: 270px;
   }
 }
 
@@ -1267,6 +1266,7 @@ body {
   .address__container {
     display: block;
     text-align: left;
+    margin: 0;
   }
 }
 
@@ -1327,6 +1327,7 @@ body {
   .social {
     display: block;
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1372,7 +1373,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-form {
     display: block;
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 
@@ -1412,6 +1413,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .footer-form__signup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-form__signup {
@@ -1467,7 +1487,23 @@ body {
   text-align: left;
   padding-left: 16px;
   color: #757575;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 12px;
+}
+@media screen and (min-width: 479px) {
+  .footer-form__label {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-form__label {
+    width: 358px;
+  }
 }
 
 .footer-form__btn {

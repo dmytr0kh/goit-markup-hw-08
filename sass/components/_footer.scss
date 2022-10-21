@@ -34,6 +34,8 @@
   @media screen and (min-width: $desktop) {
     display: block;
     text-align: left;
+
+    margin: 0;
   }
 }
 
@@ -89,6 +91,7 @@
   @media screen and (min-width: $desktop) {
     display: block;
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -121,9 +124,11 @@
     // margin-top: 60px;
   }
 
+  // @media screen and (min-width: 400px) and (max-width: 800px)
+
   @media screen and (min-width: $desktop) {
     display: block;
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 
@@ -151,6 +156,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -185,7 +198,18 @@
   padding-left: 16px;
   color: $secondary-text-color;
 
+  align-items: center;
+  justify-content: center;
+
   margin-right: 12px;
+
+  @media screen and (min-width: 479px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 358px;
+  }
 }
 
 .footer-form__btn {
