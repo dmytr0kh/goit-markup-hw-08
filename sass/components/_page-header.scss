@@ -1,8 +1,7 @@
 .page-header {
-position: relative;
+  position: relative;
   border-bottom: 1px solid $border-color;
 }
-
 
 .header-container {
   @media screen and (max-width: 767px) {
@@ -30,13 +29,13 @@ position: relative;
   @media screen and (min-width: $tablet) {
     display: flex;
     width: 100%;
-    align-items: center
+    align-items: center;
   }
 
   @media screen and (min-width: $desktop) {
     display: flex;
     width: 100%;
-    align-items: center
+    align-items: center;
   }
 }
 
@@ -97,8 +96,7 @@ position: relative;
   //   }
   // }
 
-  @media screen and (min-width: $tablet),
-  screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet), screen and (min-width: $desktop) {
     position: relative;
     display: block;
     font-weight: 500;
@@ -119,12 +117,9 @@ position: relative;
 }
 
 .link-current {
-
   color: $accent-color;
 
   @media screen and (min-width: $tablet) {
-
-
     &::after {
       content: "";
       position: absolute;
@@ -247,8 +242,7 @@ position: relative;
     }
   }
 
-  &>.contacts__icon {
-
+  & > .contacts__icon {
     @media screen and (min-width: $tablet) {
       display: block;
       margin-right: 8px;
@@ -298,6 +292,6 @@ position: relative;
 
 // .mobile-social, .mobile-social__item, .mobile-social-link {
 //   @media screen and (min-width: 768px) {
-//     display: none;    
+//     display: none;
 //   }
 // }

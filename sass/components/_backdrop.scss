@@ -28,10 +28,10 @@
 
   padding: 40px;
 
-    @media screen and (max-width:479px) {
-  max-width: 90%;
-      }
-  @media screen and (min-width:$mobile) {
+  @media screen and (max-width: 479px) {
+    max-width: 90%;
+  }
+  @media screen and (min-width: $mobile) {
     width: 450px;
   }
 
